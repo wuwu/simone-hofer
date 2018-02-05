@@ -1,0 +1,39 @@
+{
+  "name": "simonehofer",
+  "version": "1.0.0",
+  "description": "My phenomenal Nuxt.js project",
+  "author": "wuwu",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "nuxt": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "cross-env": "^5.0.1",
+    "dotenv": "^5.0.0",
+    "eslint": "^4.17.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-html": "^4.0.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^4.2.2",
+    "node-sass": "^4.7.2",
+    "nuxt-sass-resources-loader": "^1.1.1",
+    "sass-loader": "^6.0.6"
+  },
+  "config": {
+    "nuxt": {
+      "port": "4500"
+    }
+  }
+}
