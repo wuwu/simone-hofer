@@ -1,11 +1,10 @@
 <template>
-  <div class="logo">
-      <img src="~/assets/images/simonehofer_naturkosmetik.png">
-  </div>
+    <img src="~/assets/images/simonehofer_naturkosmetik.png">
 </template>
 
 <style lang="scss" scoped>
-    .logo {
-        margin-bottom: $padding-desktop;
+    img {
+        max-width: 360px;
+        height: auto;
     }
 </style>

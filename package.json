@@ -13,7 +13,8 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.0.0",
+    "bulma": "0.5.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
@@ -29,7 +30,8 @@
     "eslint-plugin-vue": "^4.2.2",
     "node-sass": "^4.7.2",
     "nuxt-sass-resources-loader": "^1.1.1",
-    "sass-loader": "^6.0.6"
+    "sass-loader": "^6.0.6",
+    "vue-scrollto": "^2.8.0"
   },
   "config": {
     "nuxt": {

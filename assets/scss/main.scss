@@ -1,4 +1,5 @@
 @import "abstracts/settings";
+@import 'base/all';
 @import "abstracts/mixins";
 
 body {
@@ -13,6 +14,15 @@ body {
   margin: 0 auto;
 }
 
+.container {
+  //min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 144px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -24,17 +34,12 @@ a{
   font-weight: 700;
   font-size: 24px;
 }
-.menu {
-  list-style: none;
-  li {
-    text-align: right;
-  }
-}
-p{
+
+p {
   @include app-margin;
 }
+
 .navigation {
-  width: 100vw;
   @include app-margin;
 }
 
@@ -52,4 +57,16 @@ figure {
     font-style: italic;
     color: rgba(255,255,255, .75);
   }
+}
+
+.is-primary {
+  color: $primary;
+}
+
+.title {
+  color: $text;
+}
+
+.has-bg {
+  background-color: $color-background;
 }
