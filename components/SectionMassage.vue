@@ -6,20 +6,22 @@
                 <figcaption>Wellness Massagen</figcaption>
             </figure>
         </div>
-        <card-treatment>
-            <template slot="header">Kräuterstempel-Massage</template>
-            <template slot="description">
-                <p>Genießen Sie die Dekolleté- und Gesichtsmassage mit Seidenkräuterstempel und einer speziellen Kräutermischung aus kontrolliert biologischem Anbau. Die Behandlung steigert die Stoffwechselprozesse in Ihrem Gewebe, beruhigt und entspannt.</p>
-            </template>
-            <p slot="price">circa 60 min / 135.-CHF</p>
-        </card-treatment>
-        <card-treatment>
-            <template slot="header">Edelstein-Massage</template>
-            <template slot="description">
-                <p>Erleben Sie die eine Dekolleté- und Gesichtsmassage mit Edelsteinen. Dank der Verbindung von Massage und Heilsteinen entsteht eine tiefe, ganzheitliche Wirkung, die Körper, Seele und Geist beruhigt. Gesundungsprozesse werden positiv beeinflusst. Die intensive Massage ist herrlich entspannend. </p>
-            </template>
-            <p slot="price">circa 60 min / 135.-CHF</p>
-        </card-treatment>
+        <div class="treatments">
+            <card-treatment>
+                <template slot="header">Kräuterstempel-Massage</template>
+                <template slot="description">
+                    <p>Genießen Sie die Dekolleté- und Gesichtsmassage mit Seidenkräuterstempel und einer speziellen Kräutermischung aus kontrolliert biologischem Anbau. Die Behandlung steigert die Stoffwechselprozesse in Ihrem Gewebe, beruhigt und entspannt.</p>
+                </template>
+                <p slot="price">circa 60 min / 135.-CHF</p>
+            </card-treatment>
+            <card-treatment>
+                <template slot="header">Edelstein-Massage</template>
+                <template slot="description">
+                    <p>Erleben Sie die eine Dekolleté- und Gesichtsmassage mit Edelsteinen. Dank der Verbindung von Massage und Heilsteinen entsteht eine tiefe, ganzheitliche Wirkung, die Körper, Seele und Geist beruhigt. Gesundungsprozesse werden positiv beeinflusst. Die intensive Massage ist herrlich entspannend. </p>
+                </template>
+                <p slot="price">circa 60 min / 135.-CHF</p>
+            </card-treatment>
+        </div>
     </section>
 </template>
 <script type="text/babel">
@@ -34,4 +36,22 @@
 </script>
 <style lang="scss" scoped>
 
+    .treatments {
+        width: 100%;
+        padding-left: $padding-desktop;
+        padding-right: $padding-mobile;
+    }
+    @include tablet {
+        .container {
+            padding-right: $padding-desktop;
+            padding-left: $padding-desktop;
+        }
+        .treatments {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: $padding-desktop *0.5;
+            padding-left: $padding-desktop *3;
+            padding-right: $padding-desktop *2;
+        }
+    }
 </style>

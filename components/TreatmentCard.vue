@@ -33,6 +33,7 @@
         padding-left: 32px;
     }
     .price {
+        margin-top: $padding-mobile;
         font-weight: 900;
     }
 </style>

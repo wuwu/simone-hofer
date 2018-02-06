@@ -50,6 +50,9 @@
     .mood {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
-        padding-left: $padding-desktop;
+        padding-left: $padding-mobile;
+        @include tablet {
+            padding-left: $padding-desktop;
+        }
     }
 </style>

@@ -22,12 +22,13 @@
 </script>
 <style lang="scss" scoped>
 
-    .mood {
-        margin-bottom: $padding-desktop;
+    .section-content {
+        padding: 0 $padding-mobile 0 $padding-desktop;
     }
 
     @include tablet {
         .section-content {
+            padding: 0;
             display: grid;
             grid-template-columns: $padding-desktop * 4 1fr $padding-desktop 1fr $padding-desktop * 2;
 

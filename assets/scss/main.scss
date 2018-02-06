@@ -7,7 +7,6 @@ html {
 }
 body {
   font-family: 'EB Garamond', serif;
-  font-size: 20px;
   line-height: 1.45;
   font-style: italic;
   font-weight: $weight-normal;
@@ -15,6 +14,7 @@ body {
   color: $color-text;
   max-width: 1280px;
   margin: 0 auto;
+  font-size: 20px;
 }
 
 .container {
@@ -35,7 +35,10 @@ a{
   color: $primary;
   text-decoration: none;
   font-weight: $weight-bold;
-  font-size: 24px;
+  font-size: 20px;
+  @include tablet {
+    font-size: 24px;
+  }
 }
 
 figure {
@@ -45,12 +48,16 @@ figure {
     position: absolute;
     font-size: 36px;
     text-align: center;
-    top: 45%;
+    top: 65%;
     left: 0;
     right: 0;
     font-weight: $weight-bold;
     font-style: italic;
     color: rgba(255,255,255, .75);
+
+    @include desktop {
+      font-size: 72px;
+    }
   }
 }
 
@@ -64,4 +71,9 @@ figure {
 
 .has-bg {
   background-color: $color-background;
+}
+
+.mood {
+  width: 100%;
+  padding-bottom: $padding-desktop;
 }

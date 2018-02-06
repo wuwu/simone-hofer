@@ -11,7 +11,7 @@
             </figure>
         </div>
         <div class="treatments">
-            <card-treatment>
+            <card-treatment class="card">
                 <template slot="header">Auszeit</template>
                 <template slot="description">
                     <ul class="list list--treatment">
@@ -90,27 +90,40 @@
 <style lang="scss" scoped>
 
     .container {
-        margin-right: $padding-desktop;
-        margin-left: $padding-desktop;
+        margin-right: 0;
+        margin-left: 0;
     }
-
+    p {
+        padding-top: $padding-desktop;
+        padding-bottom: $padding-desktop;
+        padding-left: $padding-desktop * 2;
+        padding-right: $padding-desktop*2;
+    }
     .treatments {
+        width: 100%;
+        padding-left: $padding-desktop;
+
         @include tablet {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: $padding-desktop * 0.5;
+            align-items: start;
+            padding-left: $padding-desktop * 3;
+            padding-right: $padding-desktop * 2;
         }
     }
     @include tablet {
+        .container {
+            margin-right: $padding-desktop;
+            margin-left: $padding-desktop;
+        }
+
         p {
             padding-top: $padding-desktop;
             padding-bottom: $padding-desktop;
             padding-left: $padding-desktop * 3;
             padding-right: $padding-desktop*2;
         }
-    }
-    .mood {
-        padding-bottom: $padding-desktop * 2;
     }
 
 </style>

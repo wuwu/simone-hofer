@@ -44,7 +44,7 @@
 <style lang="scss" scoped>
     .container {
         display: grid;
-        grid-template-columns: 40% auto;
+        grid-template-columns: 50% auto;
     }
     .title {
         font-size: 32px;
@@ -56,26 +56,40 @@
         grid-row: 1 / 2;
 
         figure {
-            padding-right: $padding-desktop;
+            padding-right: $padding-mobile;
+            @include tablet {
+                padding-right: $padding-desktop;
+            }
         }
     }
     .section-content {
         grid-column: 1 / 3;
         grid-row: 2 / 3;
     }
+    h2 {
+        padding-left: $padding-mobile;
+        padding-right: $padding-mobile;
+    }
+    .section-content p {
+        padding-left: $padding-desktop;
+        padding-right: $padding-mobile;
+    }
+
     .motto {
         padding: 0;
         width: 100%;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 64px;
+        margin-bottom: 64px;
         margin-left: 0;
         margin-right: 0;
-        padding-top: 16px;
-        padding-bottom: 16px;
-
-        @include app-padding;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
     @include tablet {
+        .container {
+            display: grid;
+            grid-template-columns: 40% auto;
+        }
         .section-content {
             font-size: 36px;
             line-height: 38px;
