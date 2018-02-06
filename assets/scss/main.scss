@@ -2,12 +2,15 @@
 @import 'base/all';
 @import "abstracts/mixins";
 
+html {
+  background-color: $white-ter;
+}
 body {
   font-family: 'EB Garamond', serif;
   font-size: 20px;
   line-height: 1.45;
   font-style: italic;
-  font-weight: 600;
+  font-weight: $weight-normal;
   background-color: $white;
   color: $color-text;
   max-width: 1280px;
@@ -31,16 +34,8 @@ img {
 a{
   color: $primary;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: $weight-bold;
   font-size: 24px;
-}
-
-p {
-  @include app-margin;
-}
-
-.navigation {
-  @include app-margin;
 }
 
 figure {
@@ -53,7 +48,7 @@ figure {
     top: 45%;
     left: 0;
     right: 0;
-    font-weight: 700;
+    font-weight: $weight-bold;
     font-style: italic;
     color: rgba(255,255,255, .75);
   }

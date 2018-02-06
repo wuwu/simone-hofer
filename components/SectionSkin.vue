@@ -7,7 +7,8 @@
             </figure>
         </div>
         <div class="section-content">
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <p class="col1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,</p>
+            <p class="col2"> consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
         </div>
     </section>
 </template>
@@ -21,4 +22,23 @@
 </script>
 <style lang="scss" scoped>
 
+    .mood {
+        margin-bottom: $padding-desktop;
+    }
+
+    @include tablet {
+        .section-content {
+            display: grid;
+            grid-template-columns: $padding-desktop * 4 1fr $padding-desktop 1fr $padding-desktop * 2;
+
+        }
+        .col1 {
+            grid-column: 2 / 3;
+
+        }
+        .col2 {
+            grid-column: 4 / 5;
+
+        }
+    }
 </style>

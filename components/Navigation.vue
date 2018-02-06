@@ -15,7 +15,7 @@
 </template>
 <script type="text/babel">
   import Logo from '~/components/Logo.vue'
-  import MainMenu from '~/components/Menu.vue'
+  import MainMenu from '~/components/MainMenu.vue'
   export default {
     name: 'Navigation',
     components: {
@@ -28,22 +28,28 @@
 <style lang="scss" scoped>
     .container {
         display: grid;
-        grid-gap: 1em;
-        grid-template-areas:
-            "header header"
-            "mood navigation";
+        grid-gap: 16px;
+        grid-template-columns: 1fr 1fr;
         margin-bottom: 16px;
     }
     .logo {
-        grid-area: header;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 64px;
     }
     .navigation {
-        grid-area: navigation
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+
+        @include tablet {
+            padding-left: 100px;
+        }
     }
     .mood {
-        grid-area: mood;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        padding-left: $padding-desktop;
     }
 </style>

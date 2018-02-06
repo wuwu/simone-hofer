@@ -10,7 +10,7 @@
     </section>
 </template>
 <script type="text/babel">
-  import MainMenu from '~/components/Menu.vue'
+  import MainMenu from '~/components/MainMenu.vue'
   export default {
     name: 'Footer',
     components: {

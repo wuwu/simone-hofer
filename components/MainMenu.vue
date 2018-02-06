@@ -20,7 +20,7 @@
         a {
             color: $text;
             font-style: normal;
-            font-weight: 500;
+            font-weight: $weight-normal;
         }
     }
 </style>

@@ -3,11 +3,13 @@
         <h2 class="title is-4">Für Sie & Ihn</h2>
         <div class="mood mood--image">
             <figure>
-                <img src="/images/Nina-simone-hofer-naturkosmetik_Gesichtsbehandlungen-Wellness-Massagen01.jpg" alt="SIMONE HOFER - WELLNESSMASSAGEN">
+                <img src="/images/Nina-simone-hofer-naturkosmetik_Gesichtsbehandlungen-Wellness-Massagen03.jpg" alt="SIMONE HOFER - WELLNESSMASSAGEN">
             </figure>
         </div>
         <div class="section-content">
-            <p>Aus Liebe zu Mensch und Tier, Natur und Umwelt – die ganzheitliche,
+            <p>Aus Liebe <br/>
+                zu Mensch und Tier,<br/>
+                Natur und Umwelt – die ganzheitliche,
                 individuelle Behandlung mit natürlichen Produkten liegt mir besonders am
                 Herzen. Versuche mit Kosmetik an Tieren lehne ich ab. Ebenso alle chemischen
                 Zusatzstoffe in der Kosmetik wie Silikone,
@@ -42,19 +44,24 @@
 <style lang="scss" scoped>
     .container {
         display: grid;
-        grid-gap: 1em;
-        grid-template-areas:
-            "title mood"
-            "content content";
+        grid-template-columns: 40% auto;
     }
     .title {
-        grid-area: title;
+        font-size: 32px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
     }
     .mood {
-        grid-area: mood;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+
+        figure {
+            padding-right: $padding-desktop;
+        }
     }
     .section-content {
-        grid-area: content;
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
     }
     .motto {
         padding: 0;
@@ -67,5 +74,24 @@
         padding-bottom: 16px;
 
         @include app-padding;
+    }
+    @include tablet {
+        .section-content {
+            font-size: 36px;
+            line-height: 38px;
+
+            p {
+                padding-left: $padding-desktop * 2;
+                padding-right: $padding-desktop;
+            }
+        }
+
+    }
+
+    @include desktop {
+        h2, .section-content p {
+            padding-left: $padding-desktop * 4;
+            padding-right: $padding-desktop * 2;
+        }
     }
 </style>
