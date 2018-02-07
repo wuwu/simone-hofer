@@ -28,17 +28,17 @@
 
     @include tablet {
         .section-content {
-            padding: 0;
-            display: grid;
-            grid-template-columns: $padding-desktop * 4 1fr $padding-desktop 1fr $padding-desktop * 2;
-
+            padding: 0 $padding-desktop;
+            display: flex;
         }
         .col1 {
-            grid-column: 2 / 3;
+            flex: 1;
+            padding-right: 8px;
 
         }
         .col2 {
-            grid-column: 4 / 5;
+            flex:1;
+            padding-left: 8px;
 
         }
     }

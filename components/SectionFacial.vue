@@ -93,25 +93,19 @@
         margin-right: 0;
         margin-left: 0;
     }
+
     p {
         padding-top: $padding-desktop;
         padding-bottom: $padding-desktop;
         padding-left: $padding-desktop * 2;
         padding-right: $padding-desktop*2;
     }
+
     .treatments {
         width: 100%;
         padding-left: $padding-desktop;
-
-        @include tablet {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: $padding-desktop * 0.5;
-            align-items: start;
-            padding-left: $padding-desktop * 3;
-            padding-right: $padding-desktop * 2;
-        }
     }
+
     @include tablet {
         .container {
             margin-right: $padding-desktop;
@@ -123,6 +117,18 @@
             padding-bottom: $padding-desktop;
             padding-left: $padding-desktop * 3;
             padding-right: $padding-desktop*2;
+        }
+        .treatments {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row;
+            padding-left: $padding-desktop * 3;
+            padding-right: $padding-desktop * 2;
+
+            > div {
+                flex: 50%;
+            }
         }
     }
 

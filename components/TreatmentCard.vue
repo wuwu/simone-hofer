@@ -27,9 +27,11 @@
     .title {
         color: $primary;
         font-size: 36px;
+        line-height: 32px;
+        padding-bottom: 8px;
     }
     ul {
-        list-style-type: disc;
+        list-style-type: circle;
         padding-left: 32px;
     }
     .price {

@@ -32,14 +32,25 @@
 <style lang="scss" scoped>
     .container {
         @include tablet {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: $padding-desktop;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row;
+
             padding-left: $padding-desktop;
             padding-right: $padding-desktop;
 
             .mood {
-                grid-column: 1 /3;
+                width: 100%;
+            }
+            .logo {
+                display: flex;
+                flex: 1;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            .card--contact {
+                flex: 1;
             }
         }
     }

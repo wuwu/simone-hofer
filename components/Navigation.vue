@@ -27,29 +27,31 @@
 </script>
 <style lang="scss" scoped>
     .container {
-        display: grid;
-        grid-gap: 16px;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: row;
         margin-bottom: 16px;
     }
     .logo {
-        grid-column: 1 / 3;
-        grid-row: 1 / 2;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 64px;
     }
     .navigation {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-
+        flex: 1;
+        padding-left: $padding-mobile;
         @include tablet {
             padding-left: 100px;
         }
     }
     .mood {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
+        flex: 1;
         padding-left: $padding-mobile;
         @include tablet {
             padding-left: $padding-desktop;

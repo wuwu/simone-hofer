@@ -47,11 +47,16 @@
             padding-left: $padding-desktop;
         }
         .treatments {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: $padding-desktop *0.5;
-            padding-left: $padding-desktop *3;
-            padding-right: $padding-desktop *2;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row;
+            padding-left: $padding-desktop * 3;
+            padding-right: $padding-desktop * 2;
+
+            > div {
+                flex: 50%;
+            }
         }
     }
 </style>

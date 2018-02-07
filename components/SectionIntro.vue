@@ -43,28 +43,23 @@
 </script>
 <style lang="scss" scoped>
     .container {
-        display: grid;
-        grid-template-columns: 50% auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
     .title {
+        flex: 1;
         font-size: 32px;
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
+        width: 50%;
     }
     .mood {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
+        flex: 1;
+        width: 50%;
 
         figure {
             padding-right: $padding-mobile;
-            @include tablet {
-                padding-right: $padding-desktop;
-            }
         }
-    }
-    .section-content {
-        grid-column: 1 / 3;
-        grid-row: 2 / 3;
     }
     h2 {
         padding-left: $padding-mobile;
@@ -87,8 +82,8 @@
     }
     @include tablet {
         .container {
-            display: grid;
-            grid-template-columns: 40% auto;
+            display: flex;
+            flex-direction: row;
         }
         .section-content {
             font-size: 36px;
@@ -100,6 +95,17 @@
             }
         }
 
+        .title {
+            flex: 35%;
+        }
+
+        .mood {
+            flex: 65%;
+
+            figure {
+                padding-right: $padding-desktop;
+            }
+        }
     }
 
     @include desktop {
