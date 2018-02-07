@@ -1,8 +1,5 @@
 <template>
     <section id="top" class="container">
-        <div class="logo">
-            <logo/>
-        </div>
         <div class="mood mood--image">
             <figure>
                 <img src="/images/Nina-simone-hofer-naturkosmetik_Gesichtsbehandlungen-Wellness-Massagen04.jpg" alt="SIMONE HOFER - WELLNESSMASSAGEN">
@@ -33,15 +30,10 @@
         flex-wrap: wrap;
         flex-direction: row;
         margin-bottom: 16px;
-    }
-    .logo {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 64px;
+
+        @include tablet {
+            align-items: center;
+        }
     }
     .navigation {
         flex: 1;

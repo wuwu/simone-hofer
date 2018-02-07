@@ -1,15 +1,7 @@
 <template>
     <div class="wrapper">
-        <logo></logo>
-        <navigation></navigation>
-        <intro></intro>
+        <logo/>
         <skin></skin>
-        <facial></facial>
-        <massage></massage>
-        <addon-treatments></addon-treatments>
-        <contact></contact>
-        <page-footer></page-footer>
-        <button-scroll-top></button-scroll-top>
     </div>
 </template>
 

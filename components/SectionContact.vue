@@ -2,7 +2,7 @@
     <section id="contact" class="container">
         <div class="mood mood--image">
             <figure>
-                <img src="/images/Nina-simone-hofer-naturkosmetik_Gesichtsbehandlungen-Wellness-Massagen02.jpg" alt="SIMONE HOFER - WELLNESSMASSAGEN">
+                <img src="/images/Nina-simone-hofer-naturkosmetik_Gesichtsbehandlungen-Wellness-Massagen08.jpg" alt="SIMONE HOFER - WELLNESSMASSAGEN">
                 <figcaption>Kontakt</figcaption>
             </figure>
         </div>
