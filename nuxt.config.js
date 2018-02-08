@@ -42,9 +42,15 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    'nuxt-netlify-cms',
     ['nuxt-sass-resources-loader', ['./assets/scss/abstracts/_settings.scss', './assets/scss/abstracts/_mixins.scss']]
   ],
-
+  /*
+  ** NETLIFY CMS Config
+  */
+  netlifyCms: {
+    adminPath: "secure"
+  },
   /*
   ** Build configuration
   */
