@@ -1,8 +1,8 @@
 <template>
-    <section id="massages" class="container">
+    <section id="massages" class="container has-bg">
         <div class="mood mood--image">
             <figure>
-                <img src="/images/Nina-simone-hofer-naturkosmetik_Gesichtsbehandlungen-Wellness-Massagen04.jpg" alt="SIMONE HOFER - WELLNESSMASSAGEN">
+                <img src="/images/Nina-simone-hofer-naturkosmetik_Gesichtsbehandlungen-Wellness-Massagen02.jpg" alt="SIMONE HOFER - WELLNESSMASSAGEN">
                 <figcaption>Wellness Massagen</figcaption>
             </figure>
         </div>
@@ -43,8 +43,8 @@
     }
     @include tablet {
         .container {
-            padding-right: $padding-desktop;
-            padding-left: $padding-desktop;
+            margin-right: $padding-desktop;
+            margin-left: $padding-desktop;
         }
         .treatments {
             display: flex;
@@ -56,6 +56,13 @@
 
             > div {
                 flex: 50%;
+
+            }
+            > div:first-child {
+                padding-right: 16px;
+            }
+            > div:last-child {
+                padding-left: 16px;
             }
         }
     }

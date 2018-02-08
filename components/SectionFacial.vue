@@ -1,6 +1,6 @@
 <template>
     <section id="face" class="container has-bg">
-        <p>
+        <p class="is-large">
             Tauchen Sie ein in eine Welt des Wohlbefindens und der Entspannung.
             Zertifizierte Naturkosmetika sorgen – fein abgestimmt auf die individuellen Bedürfnisse Ihrer Haut – für ein gestrafftes, ebenmäßiges Hautbild und einen gepflegten Teint.
         </p>
@@ -129,6 +129,9 @@
             > div {
                 flex: 50%;
             }
+        }
+        .is-large {
+            font-size: 28px;
         }
     }
 

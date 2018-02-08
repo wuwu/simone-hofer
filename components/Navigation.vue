@@ -24,14 +24,14 @@
 </script>
 <style lang="scss" scoped>
     .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        flex-direction: row;
         margin-bottom: 16px;
 
         @include tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            flex-direction: row;
             align-items: center;
         }
     }
@@ -45,8 +45,10 @@
     .mood {
         flex: 1;
         padding-left: $padding-mobile;
+        padding-right: $padding-mobile;
         @include tablet {
             padding-left: $padding-desktop;
+            padding-right: 0;
         }
     }
 </style>

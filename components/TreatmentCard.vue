@@ -23,6 +23,7 @@
     .card--treatment {
         width: 100%;
         margin-bottom: $padding-desktop;
+        font-style: normal;
     }
     .title {
         color: $primary;

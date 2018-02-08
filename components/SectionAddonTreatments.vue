@@ -1,5 +1,5 @@
 <template>
-    <section id="extra" class="container">
+    <section id="extra" class="container has-bg">
         <div class="mood mood--image">
             <figure>
                 <img src="/images/Nina-simone-hofer-naturkosmetik_Gesichtsbehandlungen-Wellness-Massagen06.jpg" alt="SIMONE HOFER - WELLNESSMASSAGEN">
@@ -64,8 +64,8 @@
     }
     @include tablet {
         .container {
-            padding-right: $padding-desktop;
-            padding-left: $padding-desktop;
+            margin-right: $padding-desktop;
+            margin-left: $padding-desktop;
         }
 
         .treatments {

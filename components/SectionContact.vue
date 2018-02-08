@@ -13,9 +13,9 @@
             <h3 class="title is-primary is-3">Nina Simone Thalhofer</h3>
             <p>Quaderstrasse 15, 7000 Chur </p>
             <p>Telefon +41 79 5297598</p>
-            <p><a href="mailto:kontakt@simonehofer-naturkosmetik.ch">kontakt@simonehofer-naturkosmetik.ch</a></p>
             <p>Termine nach Vereinbarung</p>
-            <button class="button is-primary">Jetzt Termin vereinbaren</button>
+            <a class="button is-primary" href="mailto:kontakt@simonehofer-naturkosmetik.ch">Jetzt Termin vereinbaren</a>
+            <p><a href="mailto:kontakt@simonehofer-naturkosmetik.ch">kontakt@simonehofer-naturkosmetik.ch</a></p>
         </div>
     </section>
 </template>
@@ -54,6 +54,7 @@
             }
         }
     }
+
     .logo {
         margin: 0 auto;
         @include mobile {

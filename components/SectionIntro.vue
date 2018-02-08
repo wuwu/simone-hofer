@@ -16,11 +16,11 @@
                 Parabene, PEG, synthetische Duft-, Farb- und Konservierungsstoffe, Sulfate, Aluminiumchlorid, Nanopartikel,
                 Hormone, Pestizide, Minerale und
                 GMO (genveränderte pflanzliche
-                Wirkstoffe).</p>
+                Wirkstoffe).</p><br/>
             <p>Als ausgebildete, diplomierte Naturkosmetikerin verwende ich nur Rohstoffe
                 aus kontrolliert biologischem Anbau
                 mit hoher Qualität, die nachweislich
-                Bio-zertifiziert sind.</p>
+                Bio-zertifiziert sind.</p><br/>
             <p>Mit meiner Behandlung möchte ich Ihnen das Zusammenspiel von Mensch und
                 Natur näher bringen.</p>
             <p class="motto has-bg">
@@ -43,22 +43,20 @@
 </script>
 <style lang="scss" scoped>
     .container {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        flex-direction: row;
+
     }
     .title {
-        flex: 1;
         font-size: 32px;
-        width: 50%;
+        @include mobile {
+            margin-top: 16px;
+        }
     }
     .mood {
         flex: 1;
-        width: 50%;
 
         figure {
             padding-right: $padding-mobile;
+            padding-left: $padding-mobile;
         }
     }
     h2 {
@@ -83,6 +81,8 @@
     @include tablet {
         .container {
             display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
             flex-direction: row;
         }
         .section-content {
@@ -96,6 +96,7 @@
         }
 
         .title {
+            padding-left: $padding-desktop * 2;
             flex: 35%;
         }
 
