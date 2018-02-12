@@ -1,15 +1,28 @@
-image: /static/uploads/sample_bg.jpg
-title: extra treatments
-subtitle: extra treatments - subtitle
-text: >-
-  **Lorem ipsum dolor sit amet, **
+image: >-
+  /static/uploads/nina-simone-hofer-naturkosmetik_gesichtsbehandlungen-wellness-massagen06.jpg
+title: extra Treatments
+treatment:
+  - text: |-
+      (Sugaring)
+
+      * halbe Beine Unterschenkel **60.-** CHF
+      * ganze Beine Oberschenkel und Unterschenkel **90.-** CHF
+      * Brust/Rücken **80.-** CHF
+      * Oberlippe **35.-** CHF
+      * Oberlippe während Kosmetikbehandlung **25.-** CHF
+    title: Natürliche Haarentfernung
+  - text: |-
+      * Wimpern färben **35.-** CHF
+      * Wimpern färben während Kosmetikbehandlung **30.-** CHF
+      * Brauen färben und formen **40.**- CHF
+      * Brauen färben während Kosmetikbehandlung **20.-** CHF
+      * Wimpern und Brauen färben **65.-** CHF
+      * Wimpern und Brauen färben während Kosmetikbehandlung **45.-** CHF
+    title: Zusatzbehandlungen
+  - text: >-
+      Handbad, Nagelhaut entfernen, Nägel kürzen und feilen, auf Wunsch
+      lackieren oder polieren, Handmaske, Handmassage
 
 
-  consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-  et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-  justo duo dolores et ea rebum. Stet clita kasd gubergren, _no sea takimat_a
-  sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-  sadipscing elitr, sed diam nonumy eir_mod tempor invid_unt ut labore et dolore
-  magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-  dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-  Lorem ipsum dolor sit amet.
+      **circa 60 min / 80.-** CHF
+    title: Maniküre
