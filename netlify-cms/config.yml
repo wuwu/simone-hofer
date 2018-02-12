@@ -6,15 +6,77 @@ backend:
 media_folder: "static/uploads"
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "content/posts"
+  - name: "treatment" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Treatment" # Used in the UI, ie.: "New Post"
+    folder: "content/treatment"
     slug: "{{year}}-{{slug}}"
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mma"}
-      - {label: "Cover Image", name: "image", widget: "image", required: false, tagname: ""}
       - {label: "Body", name: "body", widget: "markdown"}
     meta:
       - {label: "SEO Description", name: "description", widget: "text"}
+
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "About"
+        name: "about"
+        delete: false
+        file: "content/pages/about.yml"
+        fields:
+          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Body, name: body, widget: markdown}
+
+      - label: "Wellness Massagen"
+        name: "Massagen"
+        delete: false
+        file: "content/pages/wellness_massages.yml"
+        fields:
+          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Body, name: body, widget: markdown}
+
+      - label: "Kontakt"
+        name: "contact"
+        delete: false
+        file: "content/pages/contact.yml"
+        fields:
+          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Body, name: body, widget: markdown}
+
+      - label: "Hautdiagnose"
+        name: "hautdiagnose"
+        delete: false
+        file: "content/pages/hautdiagnose.yml"
+        fields:
+          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Body, name: body, widget: markdown}
+
+      - label: "Extra Treatments"
+        name: "extratreatments"
+        delete: false
+        file: "content/pages/extra_treatments.yml"
+        fields:
+          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Body, name: body, widget: markdown}
+
+      - label: "Gesichtsbehandlungen"
+        name: "facial"
+        delete: false
+        file: "content/pages/facial_treatments.yml"
+        fields:
+          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Body, name: body, widget: markdown}
