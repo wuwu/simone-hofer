@@ -3,9 +3,9 @@ image: >-
 title: Für Sie & Ihn
 subtitle: ''
 text: >-
-  Aus Liebe  
+  Aus Liebe\
 
-  zu Mensch und Tier,  
+  zu Mensch und Tier,\
 
   Natur und Umwelt – die ganzheitliche, individuelle Behandlung mit natürlichen
   Produkten liegt mir besonders am Herzen. Versuche mit Kosmetik an Tieren lehne
@@ -24,13 +24,13 @@ text: >-
   näher bringen.
 
 
-  **Mein Motto:**  
+  <div class="motto">**Mein Motto:**\
 
-  <span class="is-primary">Entspannen, Wohlfühlen, Genießen.</span>
+  <span class="is-primary">Entspannen, Wohlfühlen, Genießen.</span></div>
 
 
-  Ich freue mich auf Ihren Besuch,  
+  Ich freue mich auf Ihren Besuch,\
 
-  mit herzlichen Grüßen,  
+  mit herzlichen Grüßen,\
 
   **Ihre Nina Simone Thalhofer**
