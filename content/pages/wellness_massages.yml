@@ -1,15 +1,5 @@
-image: /static/uploads/sample_bg.jpg
+image: >-
+  /static/uploads/nina-simone-hofer-naturkosmetik_gesichtsbehandlungen-wellness-massagen02.jpg
 title: Wellness Massagen
-subtitle: Wellness Massagen - subtitle
-body: >-
-  **Lorem ipsum dolor sit amet, **
-
-
-  consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-  et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-  justo duo dolores et ea rebum. Stet clita kasd gubergren, _no sea takimat_a
-  sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-  sadipscing elitr, sed diam nonumy eir_mod tempor invid_unt ut labore et dolore
-  magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-  dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-  Lorem ipsum dolor sit amet.
+subtitle: ''
+body: ''
