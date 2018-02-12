@@ -8,20 +8,10 @@ backend:
 media_folder: "static/uploads"
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "treatment" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Treatment" # Used in the UI, ie.: "New Post"
-    folder: "content/treatment"
-    slug: "{{year}}-{{slug}}"
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Text", name: "text", widget: "markdown"}
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mma"}
-    meta:
-      - {label: "SEO Description", name: "description", widget: "text"}
-
   - label: "Pages"
     name: "pages"
+    create: false
+    delete: false
     files:
       - label: "About"
         name: "about"
@@ -32,6 +22,9 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string, required: false}
           - {label: Text, name: text, widget: markdown, required: false}
+        meta:
+          - {label: "SEO Description", name: "description", widget: "text"}
+
       - label: "Wellness Massagen"
         name: "wellness"
         delete: false
@@ -39,8 +32,15 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string, required: false}
-          - {label: Text, name: text, widget: markdown, required: false}
+          - label: "Treatment"
+            name: "treatment"
+            widget: "list"
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: "Text", name: "text", widget: "markdown"}
+        meta:
+          - {label: "SEO Description", name: "description", widget: "text"}
+
       - label: "Kontakt"
         name: "contact"
         delete: false
@@ -50,6 +50,9 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string, required: false}
           - {label: Text, name: text, widget: markdown, required: false}
+        meta:
+          - {label: "SEO Description", name: "description", widget: "text"}
+
       - label: "Hautdiagnose"
         name: "hautdiagnose"
         delete: false
@@ -59,6 +62,9 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string, required: false}
           - {label: Text, name: text, widget: markdown, required: false}
+        meta:
+          - {label: "SEO Description", name: "description", widget: "text"}
+
       - label: "Extra Treatments"
         name: "extratreatments"
         delete: false
@@ -66,8 +72,15 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string, required: false}
-          - {label: Text, name: text, widget: markdown, required: false}
+          - label: "Treatment"
+            name: "treatment"
+            widget: "list"
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: "Text", name: "text", widget: "markdown"}
+        meta:
+          - {label: "SEO Description", name: "description", widget: "text"}
+
       - label: "Gesichtsbehandlungen"
         name: "facial"
         delete: false
@@ -75,5 +88,11 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string, required: false}
-          - {label: Text, name: text, widget: markdown, required: false}
+          - label: "Treatment"
+            name: "treatment"
+            widget: "list"
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: "Text", name: "text", widget: "markdown"}
+        meta:
+          - {label: "SEO Description", name: "description", widget: "text"}
