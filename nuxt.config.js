@@ -18,7 +18,13 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,600,600i,700,700i' }
-    ]
+    ],
+    script: [
+      {
+        src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
+        type: 'text/javascript',
+      },
+    ],
   },
 
   /*
@@ -37,14 +43,17 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~plugins/vue-scrollto.js'
+    '~plugins/vue-scrollto.js',
+    { src: '~/plugins/markdown', ssr: true }
   ],
 
   /*
   ** Nuxt.js modules
   */
   modules: [
-    ['nuxt-sass-resources-loader', ['./assets/scss/abstracts/_settings.scss', './assets/scss/abstracts/_mixins.scss']]
+    ['nuxt-sass-resources-loader', ['./assets/scss/abstracts/_settings.scss', './assets/scss/abstracts/_mixins.scss']],
+    'nuxt-netlify-cms',
+    'nuxtent'
   ],
 
   /*
@@ -71,5 +80,30 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  /*
+  ** Netlify CMS
+  */
+  nuxtent: {
+    content: [
+      [
+        'posts',
+        {
+          page: '/posts/_slug',
+          permalink: '/posts/:slug',
+          generate: ['get', 'getAll'],
+          isPost: false,
+        },
+      ],
+      [
+        'pages',
+        {
+          page: '/_slug',
+          permalink: '/:slug',
+          isPost: false,
+          generate: ['get', 'getAll'],
+        },
+      ],
+    ],
+  },
 }
