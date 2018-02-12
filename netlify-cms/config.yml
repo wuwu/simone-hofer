@@ -13,33 +13,6 @@ collections: # A list of collections the CMS should be able to edit
     create: false
     delete: false
     files:
-      - label: "About"
-        name: "about"
-        delete: false
-        file: "content/pages/about.yml"
-        fields:
-          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
-          - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string, required: false}
-          - {label: Text, name: text, widget: markdown, required: false}
-        meta:
-          - {label: "SEO Description", name: "description", widget: "text"}
-
-      - label: "Wellness Massagen"
-        name: "wellness"
-        delete: false
-        file: "content/pages/wellness.yml"
-        fields:
-          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
-          - {label: Title, name: title, widget: string}
-          - label: "Treatment"
-            name: "treatment"
-            widget: "list"
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: "Text", name: "text", widget: "markdown"}
-        meta:
-          - {label: "SEO Description", name: "description", widget: "text"}
 
       - label: "Kontakt"
         name: "contact"
@@ -53,22 +26,26 @@ collections: # A list of collections the CMS should be able to edit
         meta:
           - {label: "SEO Description", name: "description", widget: "text"}
 
-      - label: "Hautdiagnose"
-        name: "hautdiagnose"
-        delete: false
-        file: "content/pages/skin.yml"
-        fields:
-          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
-          - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string, required: false}
-          - {label: Text, name: text, widget: markdown, required: false}
-        meta:
-          - {label: "SEO Description", name: "description", widget: "text"}
-
       - label: "Extra Treatments"
         name: "extratreatments"
         delete: false
         file: "content/pages/extra.yml"
+        fields:
+          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
+          - {label: Title, name: title, widget: string}
+          - label: "Treatment"
+            name: "treatment"
+            widget: "list"
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: "Text", name: "text", widget: "markdown"}
+        meta:
+          - {label: "SEO Description", name: "description", widget: "text"}
+
+      - label: "Wellness Massagen"
+        name: "wellness"
+        delete: false
+        file: "content/pages/wellness.yml"
         fields:
           - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
@@ -94,5 +71,29 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: Title, name: title, widget: string}
               - {label: "Text", name: "text", widget: "markdown"}
+        meta:
+          - {label: "SEO Description", name: "description", widget: "text"}
+
+      - label: "Hautdiagnose"
+        name: "hautdiagnose"
+        delete: false
+        file: "content/pages/skin.yml"
+        fields:
+          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string, required: false}
+          - {label: Text, name: text, widget: markdown, required: false}
+        meta:
+          - {label: "SEO Description", name: "description", widget: "text"}
+
+      - label: "About"
+        name: "about"
+        delete: false
+        file: "content/pages/about.yml"
+        fields:
+          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string, required: false}
+          - {label: Text, name: text, widget: markdown, required: false}
         meta:
           - {label: "SEO Description", name: "description", widget: "text"}
