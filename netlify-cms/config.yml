@@ -1,9 +1,9 @@
 backend:
-  name: git
+  name: github
   repo: wuwu/simone-hofer
   branch: netlify-cms
   # publish_mode: editorial_workflow
-  display_url: http://localhost:4500
+  # display_url: http://localhost:4500
 
 media_folder: "static/uploads"
 
@@ -15,8 +15,8 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Text", name: "text", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mma"}
-      - {label: "Body", name: "body", widget: "markdown"}
     meta:
       - {label: "SEO Description", name: "description", widget: "text"}
 
@@ -30,17 +30,17 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Body, name: body, widget: markdown}
+          - {label: Subtitle, name: subtitle, widget: string, required: false}
+          - {label: Text, name: text, widget: markdown, required: false}
       - label: "Wellness Massagen"
-        name: "massages"
+        name: "wellness"
         delete: false
-        file: "content/pages/wellness_massages.yml"
+        file: "content/pages/wellness.yml"
         fields:
           - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Body, name: body, widget: markdown}
+          - {label: Subtitle, name: subtitle, widget: string, required: false}
+          - {label: Text, name: text, widget: markdown, required: false}
       - label: "Kontakt"
         name: "contact"
         delete: false
@@ -48,32 +48,32 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Body, name: body, widget: markdown}
+          - {label: Subtitle, name: subtitle, widget: string, required: false}
+          - {label: Text, name: text, widget: markdown, required: false}
       - label: "Hautdiagnose"
         name: "hautdiagnose"
         delete: false
-        file: "content/pages/hautdiagnose.yml"
+        file: "content/pages/skin.yml"
         fields:
           - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Body, name: body, widget: markdown}
+          - {label: Subtitle, name: subtitle, widget: string, required: false}
+          - {label: Text, name: text, widget: markdown, required: false}
       - label: "Extra Treatments"
         name: "extratreatments"
         delete: false
-        file: "content/pages/extra_treatments.yml"
+        file: "content/pages/extra.yml"
         fields:
           - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Body, name: body, widget: markdown}
+          - {label: Subtitle, name: subtitle, widget: string, required: false}
+          - {label: Text, name: text, widget: markdown, required: false}
       - label: "Gesichtsbehandlungen"
         name: "facial"
         delete: false
-        file: "content/pages/facial_treatments.yml"
+        file: "content/pages/facial.yml"
         fields:
           - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Body, name: body, widget: markdown}
+          - {label: Subtitle, name: subtitle, widget: string, required: false}
+          - {label: Text, name: text, widget: markdown, required: false}

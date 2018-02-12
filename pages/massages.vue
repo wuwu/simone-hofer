@@ -3,8 +3,9 @@
         <logo/>
         <div class="container">
             <div class="columns">
-                <div class="column">
-                    <p>{{ }}</p>
+                <div class="column is-half is-offset-one-quarter">
+                    <h1 class="title is-size-1 hast-text-primary hast-text-left is-capitalized has-text-weight-bold">{{ post.body.text }}</h1>
+                    <p>{{ post.body.text }}</p>
                 </div>
             </div>
         </div>
@@ -20,7 +21,7 @@ export default {
     Logo
   },
   asyncData: async ({ app }) => ({
-    post: await app.$content('/pages').get('/massages'),
+    post: await app.$content('/pages').get('/wellness'),
   }),
 }
 </script>
