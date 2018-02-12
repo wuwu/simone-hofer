@@ -13,8 +13,12 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^1.0.0",
-    "bulma": "0.5.1"
+    "@nuxtjs/axios": "^4.5.0",
+    "bulma": "0.5.1",
+    "markdown-it": "^8.4.0",
+    "netlify-cms": "^1.0.2",
+    "nuxtent": "latest",
+    "nuxt": "^1.0.0-rc11"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
@@ -29,13 +33,13 @@
     "eslint-plugin-standard": "^3.0.1",
     "eslint-plugin-vue": "^4.2.2",
     "node-sass": "^4.7.2",
+    "nuxt-netlify-cms": "^2.0.1",
     "nuxt-sass-resources-loader": "^1.1.1",
     "sass-loader": "^6.0.6",
     "vue-scrollto": "^2.8.0"
   },
   "config": {
     "nuxt": {
-      "host": "192.168.2.109",
       "port": "4500"
     }
   }
