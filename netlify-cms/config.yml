@@ -1,9 +1,9 @@
 backend:
-  name: git-gateway
-  branch: netlify-cms
+  name: git
   repo: wuwu/simone-hofer
-  publish_mode: editorial_workflow
-  # url: http://localhost:3000
+  branch: netlify-cms
+  # publish_mode: editorial_workflow
+  display_url: http://localhost:4500
 
 media_folder: "static/uploads"
 
@@ -33,7 +33,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: Body, name: body, widget: markdown}
       - label: "Wellness Massagen"
-        name: "Massagen"
+        name: "massages"
         delete: false
         file: "content/pages/wellness_massages.yml"
         fields:
