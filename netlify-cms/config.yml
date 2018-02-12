@@ -1,6 +1,8 @@
 backend:
-  name: github
-  repo: wuwu/simone-hofer # Change to your repo
+  name: git-gateway
+  branch: netlify-cms
+  repo: wuwu/simone-hofer
+  publish_mode: editorial_workflow
   # url: http://localhost:3000
 
 media_folder: "static/uploads"
@@ -30,7 +32,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: Body, name: body, widget: markdown}
-
       - label: "Wellness Massagen"
         name: "Massagen"
         delete: false
@@ -40,7 +41,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: Body, name: body, widget: markdown}
-
       - label: "Kontakt"
         name: "contact"
         delete: false
@@ -50,7 +50,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: Body, name: body, widget: markdown}
-
       - label: "Hautdiagnose"
         name: "hautdiagnose"
         delete: false
@@ -60,7 +59,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: Body, name: body, widget: markdown}
-
       - label: "Extra Treatments"
         name: "extratreatments"
         delete: false
@@ -70,7 +68,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: Body, name: body, widget: markdown}
-
       - label: "Gesichtsbehandlungen"
         name: "facial"
         delete: false
