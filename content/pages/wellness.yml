@@ -1,16 +1,23 @@
 image: >-
   /static/uploads/nina-simone-hofer-naturkosmetik_gesichtsbehandlungen-wellness-massagen02.jpg
 title: Wellness Massagen
-subtitle: Wellness Massagen - subtitle
-text: >-
-  **Lorem ipsum dolor sit amet, **
+treatment:
+  - text: >-
+      Genießen Sie die Dekolleté- und Gesichtsmassage mit Seidenkräuterstempel
+      und einer speziellen Kräutermischung aus kontrolliert biologischem Anbau.
+      Die Behandlung steigert die Stoffwechselprozesse in Ihrem Gewebe, beruhigt
+      und entspannt.
 
 
-  consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-  et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-  justo duo dolores et ea rebum. Stet clita kasd gubergren, _no sea takimat_a
-  sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-  sadipscing elitr, sed diam nonumy eir_mod tempor invid_unt ut labore et dolore
-  magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-  dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-  Lorem ipsum dolor sit amet.
+      **circa 60 min / 135.-** CHF
+    title: Kräuterstempel-Massage
+  - text: >-
+      Erleben Sie die eine Dekolleté- und Gesichtsmassage mit Edelsteinen. Dank
+      der Verbindung von Massage und Heilsteinen entsteht eine tiefe,
+      ganzheitliche Wirkung, die Körper, Seele und Geist beruhigt.
+      Gesundungsprozesse werden positiv beeinflusst. Die intensive Massage ist
+      herrlich entspannend.
+
+
+      **circa 60 min / 135.-** CHF
+    title: Edelstein-Massage
