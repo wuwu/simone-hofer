@@ -1,15 +1,23 @@
 image: /static/uploads/sample_bg.jpg
 title: Contact
 subtitle: contact - subtitle
-text: >-
-  **Lorem ipsum dolor sit amet, **
+text: |-
+  ## **Nina Simone Thalhofer**
 
+  Quaderstrasse 15, 7000 Chur
 
-  consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-  et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-  justo duo dolores et ea rebum. Stet clita kasd gubergren, _no sea takimat_a
-  sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-  sadipscing elitr, sed diam nonumy eir_mod tempor invid_unt ut labore et dolore
-  magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-  dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-  Lorem ipsum dolor sit amet.
+  Telefon [+41 79 5297598](tel://+41795297598)
+
+  Termine nach Vereinbarung
+
+  Jetzt Termin vereinbaren
+
+  [kontakt@simonehofer-naturkosmetik.ch](<mailto://Nina Simone Thalhofer
+  Quaderstrasse 15, 7000 Chur
+
+  Telefon +41 79 5297598
+
+  Termine nach Vereinbarung
+
+  Jetzt Termin vereinbaren
+  mailto://kontakt@simonehofer-naturkosmetik.ch>)
