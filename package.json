@@ -14,12 +14,11 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^4.5.0",
+    "@nuxtjs/markdownit": "^1.2.0",
     "bulma": "0.5.1",
-    "markdown-it": "^8.4.0",
     "netlify-cms": "^1.0.2",
     "nuxt": "1.0.0-rc11",
-    "nuxtent": "latest",
-    "vue-markdown": "^2.2.4"
+    "nuxtent": "latest"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
@@ -32,10 +31,13 @@
     "eslint-plugin-promise": "^3.4.1",
     "eslint-plugin-standard": "^2.0.1",
     "eslint-plugin-vue": "^4.2.2",
+    "markdown-it-attrs": "^1.2.1",
+    "markdown-it-container": "^2.0.0",
     "node-sass": "^4.7.2",
     "nuxt-netlify-cms": "^2.0.1",
     "nuxt-sass-resources-loader": "^1.1.1",
     "sass-loader": "^6.0.6",
+    "vue-markdown": "^2.2.4",
     "vue-scrollto": "^2.8.0"
   },
   "config": {

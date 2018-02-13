@@ -6,19 +6,20 @@
                 <img :src="getCorrectImagePath(post.image)" alt="SIMONE HOFER - WELLNESSMASSAGEN">
             </figure>
         </div>
-        <div class="section-content" :html="md(post.text)">
+        <div class="section-content">
             <vue-markdown :source="post.text"></vue-markdown>
         </div>
     </section>
 </template>
 <script type="text/babel">
-  import VueMarkdown from 'vue-markdown'
   export default {
     name: 'Intro',
-    components: {
-      VueMarkdown
-    },
-    props: ['post']
+    props: ['post'],
+    data() {
+      return {
+        model: '# Hello World!'
+      }
+    }
   }
 </script>
 <style lang="scss" scoped>
@@ -48,16 +49,6 @@
         padding-right: $padding-mobile;
     }
 
-    .motto {
-        padding: 0;
-        width: 100%;
-        margin-top: 64px;
-        margin-bottom: 64px;
-        margin-left: 0;
-        margin-right: 0;
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
     @include tablet {
         .container {
             display: flex;

@@ -44,7 +44,9 @@ module.exports = {
   */
   plugins: [
     '~plugins/vue-scrollto.js',
-    { src: '~/plugins/markdown', ssr: true }
+    '~plugins/markdown-helpers.js',
+    { src: '~/plugins/vue-markdown.js', ssr: false }
+
   ],
 
   /*
@@ -53,13 +55,13 @@ module.exports = {
   modules: [
     ['nuxt-sass-resources-loader', ['./assets/scss/abstracts/_settings.scss', './assets/scss/abstracts/_mixins.scss']],
     'nuxt-netlify-cms',
-    'nuxtent'
+    'nuxtent',
   ],
-
   /*
   ** Build configuration
   */
   build: {
+    vendor: ['vue-markdown'],
     postcss: [
       require('autoprefixer')({
         browsers: ['> 5%'],
