@@ -2,7 +2,7 @@
     <div class="wrapper">
         <logo></logo>
         <navigation></navigation>
-        <intro></intro>
+        <intro :post="postIntro.body"></intro>
         <skin></skin>
         <facial></facial>
         <massage></massage>
@@ -37,7 +37,10 @@ export default {
     ButtonScrollTop,
     Contact,
     PageFooter
-  }
+  },
+  asyncData: async ({ app }) => ({
+    postIntro: await app.$content('/pages').get('/about'),
+  }),
 }
 </script>
 
