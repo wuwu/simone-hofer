@@ -8,93 +8,93 @@ backend:
 media_folder: "static/uploads"
 
 collections: # A list of collections the CMS should be able to edit
-  - label: "Pages"
-    name: "pages"
+  - label: Pages
+    name: pages
     create: false
     delete: false
     files:
 
-      - label: "Kontakt"
-        name: "contact"
+      - label: Kontakt
+        name: contact
         delete: false
-        file: "content/pages/contact.yml"
+        file: content/pages/contact.yml
         fields:
-          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
+          - {label: Image, name: image, widget: image, required: false, tagname:"" }
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string, required: false}
           - {label: Text, name: text, widget: markdown, required: false}
         meta:
-          - {label: "SEO Description", name: "description", widget: "text"}
+          - {label: SEO Description, name: description, widget: text}
 
-      - label: "Extra Treatments"
-        name: "extratreatments"
+      - label: Extra Treatments
+        name: extratreatments
         delete: false
-        file: "content/pages/extra.yml"
+        file: content/pages/extra.yml
         fields:
-          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
+          - {label: Image, name: image, widget: image, required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
-          - label: "Treatment"
-            name: "treatment"
-            widget: "list"
+          - label: Treatment
+            name: treatment
+            widget: list
             fields:
               - {label: Title, name: title, widget: string}
-              - {label: "Text", name: "text", widget: "markdown"}
+              - {label: Text, name: text, widget: markdown}
         meta:
-          - {label: "SEO Description", name: "description", widget: "text"}
+          - {label: SEO Description, name: description, widget: text}
 
-      - label: "Wellness Massagen"
-        name: "wellness"
+      - label: Wellness Massagen
+        name: wellness
         delete: false
-        file: "content/pages/wellness.yml"
+        file: content/pages/wellness.yml
         fields:
-          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
+          - {label: Image, name: image, widget: image, required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
-          - label: "Treatment"
-            name: "treatment"
-            widget: "list"
+          - label: Treatment
+            name: treatment
+            widget: list
             fields:
               - {label: Title, name: title, widget: string}
-              - {label: "Text", name: "text", widget: "markdown"}
+              - {label: Text, name: text, widget: markdown}
         meta:
-          - {label: "SEO Description", name: "description", widget: "text"}
+          - {label: SEO Description, name: description, widget: text}
 
-      - label: "Gesichtsbehandlungen"
-        name: "facial"
+      - label: Gesichtsbehandlungen
+        name: facial
         delete: false
-        file: "content/pages/facial.yml"
+        file: content/pages/facial.yml
         fields:
-          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
+          - {label: Image, name: image, widget: image, required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: text}
-          - label: "Treatment"
-            name: "treatment"
-            widget: "list"
+          - label: Treatment
+            name: treatment
+            widget: list
             fields:
               - {label: Title, name: title, widget: string}
-              - {label: "Text", name: "text", widget: "markdown"}
+              - {label: Text, name: text, widget: markdown}
         meta:
-          - {label: "SEO Description", name: "description", widget: "text"}
+          - {label: SEO Description, name: description, widget: text}
 
-      - label: "Hautdiagnose"
-        name: "hautdiagnose"
+      - label: Hautdiagnose
+        name: hautdiagnose
         delete: false
-        file: "content/pages/skin.yml"
+        file: content/pages/skin.yml
         fields:
-          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
+          - {label: Image, name: image, widget: image, required: false, tagname: ""}
+          - {label: Title, name: title, widget: string}
+          - {label: Sektion Intro, name: intro, widget: text, required: false}
+          - {label: Text, name: text, widget: markdown, required: false}
+        meta:
+          - {label: SEO Description, name: description, widget: text}
+
+      - label: About
+        name: about
+        delete: false
+        file: content/pages/about.yml
+        fields:
+          - {label: Image, name: image, widget: image, required: false, tagname: ""}
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string, required: false}
           - {label: Text, name: text, widget: markdown, required: false}
         meta:
-          - {label: "SEO Description", name: "description", widget: "text"}
-
-      - label: "About"
-        name: "about"
-        delete: false
-        file: "content/pages/about.yml"
-        fields:
-          - {label: "Image", name: "image", widget: "image", required: false, tagname: ""}
-          - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string, required: false}
-          - {label: Text, name: text, widget: markdown, required: false}
-        meta:
-          - {label: "SEO Description", name: "description", widget: "text"}
+          - {label: SEO Description, name: description, widget: text}

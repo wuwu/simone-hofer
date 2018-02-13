@@ -40,6 +40,11 @@ export default {
   },
   asyncData: async ({ app }) => ({
     postIntro: await app.$content('/pages').get('/about'),
+    postSkin: await app.$content('/pages').get('/skin'),
+    postFacial: await app.$content('/pages').get('/facial'),
+    postWellness: await app.$content('/pages').get('/wellness'),
+    postExtra: await app.$content('/pages').get('/extra'),
+    postContact: await app.$content('/pages').get('/contact'),
   }),
 }
 </script>
