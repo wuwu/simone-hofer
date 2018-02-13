@@ -17,9 +17,7 @@
 <script type="text/babel">
   export default {
     name: 'Skin',
-    props: ['post'],
-    components: {
-    }
+    props: ['post']
   }
 </script>
 <style lang="scss" scoped>

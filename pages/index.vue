@@ -4,16 +4,16 @@
         <navigation></navigation>
         <intro :post="postIntro.body"></intro>
         <skin :post="postSkin.body"></skin>
-        <facial></facial>
-        <massage></massage>
-        <addon-treatments></addon-treatments>
-        <contact></contact>
+        <facial :post="postFacial.body"></facial>
+        <massage :post="postWellness.body"></massage>
+        <addon-treatments :post="postExtra.body"></addon-treatments>
+        <contact :post="postContact.body"></contact>
         <page-footer></page-footer>
         <button-scroll-top></button-scroll-top>
     </div>
 </template>
 
-<script>
+<script type="text/babel">
 import Logo from '~/components/Logo.vue'
 import Navigation from '~/components/Navigation.vue'
 import Intro from '~/components/SectionIntro.vue'

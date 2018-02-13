@@ -2,20 +2,15 @@
     <section id="contact" class="container">
         <div class="mood mood--image">
             <figure>
-                <img src="/images/Nina-simone-hofer-naturkosmetik_Gesichtsbehandlungen-Wellness-Massagen08.jpg" alt="SIMONE HOFER - WELLNESSMASSAGEN">
-                <figcaption>Kontakt</figcaption>
+                <img :src="getCorrectImagePath(post.image)" alt="SIMONE HOFER - WELLNESSMASSAGEN">
+                <figcaption>{{post.title}}</figcaption>
             </figure>
         </div>
         <div class="logo">
             <logo></logo>
         </div>
         <div class="card card--contact">
-            <h3 class="title is-primary is-3">Nina Simone Thalhofer</h3>
-            <p>Quaderstrasse 15, 7000 Chur </p>
-            <p>Telefon +41 79 5297598</p>
-            <p>Termine nach Vereinbarung</p>
-            <a class="button is-primary" href="mailto:kontakt@simonehofer-naturkosmetik.ch">Jetzt Termin vereinbaren</a>
-            <p><a href="mailto:kontakt@simonehofer-naturkosmetik.ch">kontakt@simonehofer-naturkosmetik.ch</a></p>
+            <vue-markdown :source="post.text"></vue-markdown>
         </div>
     </section>
 </template>
@@ -26,7 +21,7 @@
     components: {
       Logo
     },
-    props: {},
+    props: ['post']
   }
 </script>
 <style lang="scss" scoped>
