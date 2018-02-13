@@ -3,7 +3,7 @@
         <logo></logo>
         <navigation></navigation>
         <intro :post="postIntro.body"></intro>
-        <skin></skin>
+        <skin :post="postSkin.body"></skin>
         <facial></facial>
         <massage></massage>
         <addon-treatments></addon-treatments>

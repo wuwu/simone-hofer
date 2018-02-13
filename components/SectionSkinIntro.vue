@@ -2,18 +2,14 @@
     <section id="skin" class="container">
         <div class="mood mood--image">
             <figure>
-                <img src="/images/Nina-simone-hofer-naturkosmetik_Gesichtsbehandlungen-Wellness-Massagen07.jpg" alt="SIMONE HOFER - WELLNESSMASSAGEN">
-                <figcaption>Hautdiagnose</figcaption>
+                <img :src="getCorrectImagePath(post.image)" alt="SIMONE HOFER - WELLNESSMASSAGEN">
+                <figcaption>{{post.title}}</figcaption>
             </figure>
         </div>
         <div class="section-content">
             <div class="entry-content">
-                <p><strong class="primary">Hautanalyse</strong><br>
-                    Die Haut ist eines der wichtigsten und grössten Organe unseres Körpers. Wohlbefinden oder Unwohlsein lässt sich durch unsere Haut eruieren.</p>
-                <p>Nichts bringt so charakteristisch unverwechselbar und stets unterscheidbar die Individualität eines Menschen zum Ausdruck wie seine Haut. Daher ist eine innere und äussere Pflege diese Organes so wichtig.</p>
-                <p>Warum die Hautanalyse so wichtig ist……</p>
+                <vue-markdown :source="post.intro"></vue-markdown>
                 <nuxt-link to="/hautanalyse" class="button is-primary">weitere Informationen</nuxt-link>
-
             </div>
         </div>
     </section>
@@ -21,9 +17,9 @@
 <script type="text/babel">
   export default {
     name: 'Skin',
+    props: ['post'],
     components: {
-    },
-    props: {},
+    }
   }
 </script>
 <style lang="scss" scoped>

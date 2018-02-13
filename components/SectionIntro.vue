@@ -14,12 +14,7 @@
 <script type="text/babel">
   export default {
     name: 'Intro',
-    props: ['post'],
-    data() {
-      return {
-        model: '# Hello World!'
-      }
-    }
+    props: ['post']
   }
 </script>
 <style lang="scss" scoped>
