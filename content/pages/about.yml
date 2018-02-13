@@ -20,13 +20,17 @@ text: >-
   Bio-zertifiziert sind.
 
 
+  \
+
   Mit meiner Behandlung möchte ich Ihnen das Zusammenspiel von Mensch und Natur
   näher bringen.
 
 
-  **Mein Motto:** \
+  <div class="motto">**Mein Motto:**
 
-  Entspannen, Wohlfühlen, Genießen. \\
+
+  <span class="is-primary">Entspannen, Wohlfühlen, Genießen.</span></div>
+
 
   Ich freue mich auf Ihren Besuch,\
 
