@@ -4,8 +4,8 @@
             <main-menu></main-menu>
         </div>
         <div class="disclaimer">
-            <a href="#">Datenschutz</a><br/>
-            <a href="#">Impressum</a>
+            <a href="/datenschutz">Datenschutz</a><br/>
+            <a href="/datenschutz">Impressum</a>
         </div>
     </section>
 </template>
