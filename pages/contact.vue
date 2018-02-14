@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  layout: 'page',
+  layout: 'default',
 
   asyncData: async ({ app }) => ({
     post: await app.$content('/pages').get('/contact'),
