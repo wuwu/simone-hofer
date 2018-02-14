@@ -14,6 +14,16 @@ collections: # A list of collections the CMS should be able to edit
     delete: false
     files:
 
+      - label: Datenschutz / Impressum
+        name: datenschutz
+        delete: false
+        file: content/pages/datenschutz.yml
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Text, name: text, widget: markdown, required: false}
+        meta:
+          - {label: SEO Description, name: description, widget: text}
+
       - label: Kontakt
         name: contact
         delete: false

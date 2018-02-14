@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
         <logo/>
-        <skin></skin>
+        <skin :post="postSkin.body"></skin>
     </div>
 </template>
 
@@ -13,7 +13,10 @@ export default {
   components: {
     Logo,
     Skin
-  }
+  },
+  asyncData: async ({ app }) => ({
+    postSkin: await app.$content('/pages').get('/skin')
+  })
 }
 </script>
 
