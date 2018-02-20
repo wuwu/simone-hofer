@@ -12,8 +12,8 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Ausgebildete, diplomierte Naturkosmetikerin Hautanalyse, Ganzheitliche, Gesichtsbehandlungen, individuelle Behandlung mit zertifizierten natürlichen Produkten für Genießen, Wohlbefinden und Entspannung' },
-      { hid: 'keywords', name: 'keywords', content: 'naturkosmetik, Gesichtsreinigung, Naturkosmetika, Hautdiagnose, Hautanalyse, Kosmetikbehandlung, Wellness Massagen, Augenbrauenkorrektur, Nacken-, Dekolleté-, Gesichtsmassage, Kräuter-Kompressen, typgerechtes Peeling, Lymphstimulationsmassage, Kräuterstempel-Massage, Maniküre, Handbad, Nagelhaut entfernen, Wimpern färben, Brauen färben und formen, Natürliche, Haarentfernung, 7000 Chur, naturkosmetik, sugaring' }
-
+      { hid: 'keywords', name: 'keywords', content: 'naturkosmetik, Gesichtsreinigung, Naturkosmetika, Hautdiagnose, Hautanalyse, Kosmetikbehandlung, Wellness Massagen, Augenbrauenkorrektur, Nacken-, Dekolleté-, Gesichtsmassage, Kräuter-Kompressen, typgerechtes Peeling, Lymphstimulationsmassage, Kräuterstempel-Massage, Maniküre, Handbad, Nagelhaut entfernen, Wimpern färben, Brauen färben und formen, Natürliche, Haarentfernung, 7000 Chur, naturkosmetik, sugaring' },
+      { hid: 'google-site-verification', name:'google-site-verification', content: 'dfDD92KI_EKTM6h4HPi9YnDwVkWDz--FBb8U9uMzupA'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
