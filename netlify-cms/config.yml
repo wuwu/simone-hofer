@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: wuwu/simone-hofer
-  branch: netlify-cms
+  branch: master
   # publish_mode: editorial_workflow
   # display_url: http://localhost:4500
 
