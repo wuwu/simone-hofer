@@ -8,7 +8,7 @@
         <div class="treatments">
             <card-treatment class="card" v-for="(treat, index) in post.treatment" :key="index">
                 <template slot="header">{{treat.title}}</template>
-                <template slot="description">
+                <template slot="description" class="description">
                     <vue-markdown :source="treat.text"></vue-markdown>
                 </template>
             </card-treatment>
@@ -44,6 +44,7 @@
     .treatments {
         width: 100%;
         padding-left: $padding-desktop;
+        margin-top: 30px;
     }
 
     @include tablet {
