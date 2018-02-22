@@ -49,7 +49,11 @@
             }
         }
     }
-
+    @include mobile {
+        .card--contact {
+            padding: 0 32px;
+        }
+    }
     .logo {
         margin: 0 auto;
         @include mobile {
