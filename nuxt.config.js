@@ -19,12 +19,6 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,600,600i,700,700i' }
     ],
-    // script: [
-    //   {
-    //     src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
-    //     type: 'text/javascript',
-    //   },
-    // ],
   },
 
   /*
