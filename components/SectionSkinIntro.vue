@@ -3,7 +3,7 @@
         <div class="mood mood--image">
             <figure>
                 <img :src="getCorrectImagePath(post.image)" alt="SIMONE HOFER - WELLNESSMASSAGEN">
-                <figcaption>{{post.title}}</figcaption>
+                <figcaption>Hautdiagnose</figcaption>
             </figure>
         </div>
         <div class="section-content">
