@@ -1,0 +1,54 @@
+image: >-
+  /static/uploads/nina-simone-hofer-naturkosmetik_gesichtsbehandlungen-wellness-massagen01.jpg
+title: Facial treatments
+intro: >-
+  Tauchen Sie ein in eine Welt des Wohlbefindens und der Entspannung.
+  Zertifizierte Naturkosmetika sorgen – fein abgestimmt auf die individuellen
+  Bedürfnisse Ihrer Haut – für ein gestrafftes, ebenmässiges Hautbild und einen
+  gepflegten Teint.
+treatment:
+  - text: |-
+      * Gesichtsreinigung/Hautdiagnose
+      * Kompressen
+      * typgerechtes Peeling
+      * Ausreinigen
+      * Maske
+      * Abschlusspflege
+
+      **circa 60 min / 120.-** CHF
+    title: Auszeit
+  - text: |-
+      * Gesichtsreinigung/Hautdiagnose
+      * Kompressen
+      * typgerechtes Peeling
+      * Ausreinigen
+      * Augenbrauenkorrektur
+      * Serum
+      * Maske
+      * Nacken-, Dekolleté-, Gesichtsmassage
+      * Abschlusspflege
+
+      **circa 90 min / 180.-** CHF
+    title: Loslassen
+  - text: |-
+      * Gesichtsreinigung/Hautdiagnose
+      * Kräuter-Kompressen
+      * typgerechtes Peeling
+      * Ausreinigen
+      * Augenbrauenkorrektur
+      * Serum
+      * Maske
+      * Nacken-, Dekolleté-, Gesichtsmassage
+      * Abschlusspflege
+
+      **circa 90 min / 180.-** CHF
+    title: Kräuterzauber
+  - text: |-
+      * Gesichtsreinigung
+      * Ohrkerzenbehandlung
+      * Nachruhen
+      * Lymphstimulationsmassage
+      * Abschlusspflege
+
+      **circa 60 min / 80.-** CHF
+    title: Ohrkerzenbehandlung

@@ -1,76 +1,16 @@
 <template>
     <section id="face" class="container has-bg">
-        <p>
-            Tauchen Sie ein in eine Welt des Wohlbefindens und der Entspannung.
-            Zertifizierte Naturkosmetika sorgen – fein abgestimmt auf die individuellen Bedürfnisse Ihrer Haut – für ein gestrafftes, ebenmäßiges Hautbild und einen gepflegten Teint.
-        </p>
-        <div class="mood mood--image">
-            <figure>
-                <img src="/images/Nina-simone-hofer-naturkosmetik_Gesichtsbehandlungen-Wellness-Massagen01.jpg" alt="SIMONE HOFER - WELLNESSMASSAGEN">
-                <figcaption>Gesichtsbehandlungen</figcaption>
-            </figure>
-        </div>
+        <vue-markdown :source="post.intro" class="is-large"></vue-markdown>
+        <figure>
+            <img :src="getCorrectImagePath(post.image)" alt="SIMONE HOFER - WELLNESSMASSAGEN">
+            <figcaption>{{post.title}}</figcaption>
+        </figure>
         <div class="treatments">
-            <card-treatment class="card">
-                <template slot="header">Auszeit</template>
-                <template slot="description">
-                    <ul class="list list--treatment">
-                        <li>Gesichtsreinigung/Hautdiagnose</li>
-                        <li>Kompressen</li>
-                        <li>typgerechtes Peeling</li>
-                        <li>Ausreinigen</li>
-                        <li>Maske</li>
-                        <li>Abschlusspflege</li>
-                    </ul>
+            <card-treatment class="card" v-for="(treat, index) in post.treatment" :key="index">
+                <template slot="header">{{treat.title}}</template>
+                <template slot="description" class="description">
+                    <vue-markdown :source="treat.text"></vue-markdown>
                 </template>
-                <template slot="price">circa 60 min / 120.-CHF</template>
-            </card-treatment>
-            <card-treatment>
-                <template slot="header">Loslassen</template>
-                <template slot="description">
-                    <ul class="list list--treatment">
-                        <li>Gesichtsreinigung/Hautdiagnose</li>
-                        <li>Kompressen</li>
-                        <li>typgerechtes Peeling</li>
-                        <li>Ausreinigen</li>
-                        <li>Augenbrauenkorrektur</li>
-                        <li>Serum</li>
-                        <li>Maske</li>
-                        <li>Nacken-, Dekolleté-, Gesichtsmassage</li>
-                        <li>Abschlusspflege</li>
-                    </ul>
-                </template>
-                <template slot="price">circa 90 min / 180.- CHF</template>
-            </card-treatment>
-            <card-treatment>
-                <template slot="header">Kräuterzauber</template>
-                <template slot="description">
-                    <ul class="list list--treatment">
-                        <li>Gesichtsreinigung/Hautdiagnose</li>
-                        <li>Kräuter-Kompressen</li>
-                        <li>typgerechtes Peeling</li>
-                        <li>Ausreinigen</li>
-                        <li>Augenbrauenkorrektur</li>
-                        <li>Serum</li>
-                        <li>Maske</li>
-                        <li>Nacken-, Dekolleté-, Gesichtsmassage</li>
-                        <li>Abschlusspflege</li>
-                    </ul>
-                </template>
-                <template slot="price">circa 90 min / 180.- CHF</template>
-            </card-treatment>
-            <card-treatment>
-                <template slot="header">Ohrkerzenbehandlung</template>
-                <template slot="description">
-                    <ul class="list list--treatment">
-                        <li>Gesichtsreinigung</li>
-                        <li>Ohrkerzenbehandlung</li>
-                        <li>Nachruhen</li>
-                        <li>Lymphstimulationsmassage</li>
-                        <li>Abschlusspflege</li>
-                    </ul>
-                </template>
-                <template slot="price">circa 60 min / 80.- CHF</template>
             </card-treatment>
         </div>
 
@@ -84,7 +24,7 @@
     components: {
       CardTreatment
     },
-    props: {},
+    props: ['post']
   }
 </script>
 <style lang="scss" scoped>
@@ -94,7 +34,7 @@
         margin-left: 0;
     }
 
-    p {
+    .is-large {
         padding-top: $padding-desktop;
         padding-bottom: $padding-desktop;
         padding-left: $padding-desktop * 2;
@@ -104,6 +44,7 @@
     .treatments {
         width: 100%;
         padding-left: $padding-desktop;
+        margin-top: 30px;
     }
 
     @include tablet {
@@ -112,12 +53,6 @@
             margin-left: $padding-desktop;
         }
 
-        p {
-            padding-top: $padding-desktop;
-            padding-bottom: $padding-desktop;
-            padding-left: $padding-desktop * 3;
-            padding-right: $padding-desktop*2;
-        }
         .treatments {
             display: flex;
             justify-content: space-between;
@@ -129,6 +64,13 @@
             > div {
                 flex: 50%;
             }
+        }
+        .is-large {
+            font-size: 28px;
+            padding-top: $padding-desktop;
+            padding-bottom: $padding-desktop;
+            padding-left: $padding-desktop * 3;
+            padding-right: $padding-desktop*2;
         }
     }
 

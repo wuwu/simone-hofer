@@ -4,8 +4,8 @@
             <main-menu></main-menu>
         </div>
         <div class="disclaimer">
-            <a href="#">Datenschutz</a><br/>
-            <a href="#">Impressum</a>
+            <nuxt-link to="/datenschutz">Datenschutz</nuxt-link><br/>
+                <nuxt-link to="/datenschutz">Impressum</nuxt-link>
         </div>
     </section>
 </template>

@@ -11,12 +11,15 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Gesichtsbehandlungen & Wellness Massagen mit Naturkosmetik in Chur - Schweiz' }
+      { name: 'google-site-verification', content: '0leEmXWmiJjZCKPtLPlbICysp6PjuPX25XmtipljEds' },
+      { hid: 'description', name: 'description', content: 'Ausgebildete, diplomierte Naturkosmetikerin Hautanalyse, Ganzheitliche, Gesichtsbehandlungen, individuelle Behandlung mit zertifizierten natürlichen Produkten für Genießen, Wohlbefinden und Entspannung' },
+      { hid: 'keywords', name: 'keywords', content: 'naturkosmetik, Gesichtsreinigung, Naturkosmetika, Hautdiagnose, Hautanalyse, Kosmetikbehandlung, Wellness Massagen, Augenbrauenkorrektur, Nacken-, Dekolleté-, Gesichtsmassage, Kräuter-Kompressen, typgerechtes Peeling, Lymphstimulationsmassage, Kräuterstempel-Massage, Maniküre, Handbad, Nagelhaut entfernen, Wimpern färben, Brauen färben und formen, Natürliche, Haarentfernung, 7000 Chur, naturkosmetik, sugaring' },
+      { hid: 'google-site-verification', name:'google-site-verification', content: 'dfDD92KI_EKTM6h4HPi9YnDwVkWDz--FBb8U9uMzupA'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,600,600i,700,700i' }
-    ]
+    ],
   },
 
   /*
@@ -35,20 +38,24 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~plugins/vue-scrollto.js'
+    '~plugins/vue-scrollto.js',
+    '~plugins/markdown-helpers.js',
+    { src: '~/plugins/vue-markdown.js', ssr: false }
+
   ],
 
   /*
   ** Nuxt.js modules
   */
   modules: [
-    ['nuxt-sass-resources-loader', ['./assets/scss/abstracts/_settings.scss', './assets/scss/abstracts/_mixins.scss']]
+    ['nuxt-sass-resources-loader', ['./assets/scss/abstracts/_settings.scss', './assets/scss/abstracts/_mixins.scss']],
+    'nuxtent',
   ],
-
   /*
   ** Build configuration
   */
   build: {
+    vendor: ['vue-markdown'],
     postcss: [
       require('autoprefixer')({
         browsers: ['> 5%'],
@@ -69,5 +76,21 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  /*
+  ** Netlify CMS
+  */
+  nuxtent: {
+    content: [
+      [
+        'pages',
+        {
+          page: '/_slug',
+          permalink: '/:slug',
+          isPost: false,
+          generate: ['get', 'getAll'],
+        },
+      ],
+    ],
+  },
 }

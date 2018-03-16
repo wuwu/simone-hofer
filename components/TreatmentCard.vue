@@ -3,7 +3,7 @@
         <h3 class="title">
             <slot name="header"></slot>
         </h3>
-        <slot name="description"></slot>
+        <slot name="description" class="description"></slot>
         <p class="price">
             <slot name="price">
 
@@ -23,17 +23,17 @@
     .card--treatment {
         width: 100%;
         margin-bottom: $padding-desktop;
+        font-style: normal;
+
     }
+
     .title {
         color: $primary;
         font-size: 36px;
         line-height: 32px;
         padding-bottom: 8px;
     }
-    ul {
-        list-style-type: circle;
-        padding-left: 32px;
-    }
+
     .price {
         margin-top: $padding-mobile;
         font-weight: 900;

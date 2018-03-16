@@ -69,11 +69,31 @@ figure {
   color: $text;
 }
 
-.has-bg {
+.has-bg, .motto {
   background-color: $color-background;
 }
 
 .mood {
   width: 100%;
   padding-bottom: $padding-desktop;
+}
+.button {
+  margin: 16px 0;
+  padding: 8px 16px;
+  font-size: 24px;
+  background-color: $primary;
+  color: $white;
+  border: 1px solid $white-ter;
+  border-radius: 8px;
+  font-weight: 600;
+  outline: none;
+  display: inline-block;
+
+  &:hover {
+    color: $white-ter
+  }
+}
+.card--treatment ul {
+  list-style-type: circle;
+  padding-left: 32px;
 }
