@@ -12,13 +12,18 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'google-site-verification', content: '0leEmXWmiJjZCKPtLPlbICysp6PjuPX25XmtipljEds' },
-      { hid: 'description', name: 'description', content: 'Ausgebildete, diplomierte Naturkosmetikerin Hautanalyse, Ganzheitliche, Gesichtsbehandlungen, individuelle Behandlung mit zertifizierten natürlichen Produkten für Genießen, Wohlbefinden und Entspannung' },
-      { hid: 'keywords', name: 'keywords', content: 'naturkosmetik, Gesichtsreinigung, Naturkosmetika, Hautdiagnose, Hautanalyse, Kosmetikbehandlung, Wellness Massagen, Augenbrauenkorrektur, Nacken-, Dekolleté-, Gesichtsmassage, Kräuter-Kompressen, typgerechtes Peeling, Lymphstimulationsmassage, Kräuterstempel-Massage, Maniküre, Handbad, Nagelhaut entfernen, Wimpern färben, Brauen färben und formen, Natürliche, Haarentfernung, 7000 Chur, naturkosmetik, sugaring' },
-      { hid: 'google-site-verification', name:'google-site-verification', content: 'dfDD92KI_EKTM6h4HPi9YnDwVkWDz--FBb8U9uMzupA'}
+      { hid: 'description', name: 'description', content: 'Willkommen bei Simone Hofer Naturkosmetik in Chur · diplomierte Naturkosmetikerin · Entspannen, wohlfühlen und geniessen von der Gesichtspflege über Hautanalyse bis zu ganzheitlichen Gesichtsbehandlungen · schön & rein mit zertifizierten natürlichen Produkten ' },
+      { hid: 'keywords', name: 'keywords', content: 'naturkosmetik, Gesichtsreinigung, Naturkosmetika, Hautdiagnose, Hautanalyse, Kosmetikbehandlung, Wellness Massagen, Augenbrauenkorrektur, Gesichtsmassage, Kräuter-Kompressen, typgerechtes Peeling, Lymphstimulationsmassage, Kräuterstempel-Massage, Maniküre, Natürliche, Haarentfernung, Chur, 7000 Chur, sugaring' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,600,600i,700,700i' }
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,600,600i,700,700i' },
+    ],
+    script: [
+      {
+        src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
+        type: 'text/javascript',
+      },
     ],
   },
 
@@ -49,7 +54,10 @@ module.exports = {
   */
   modules: [
     ['nuxt-sass-resources-loader', ['./assets/scss/abstracts/_settings.scss', './assets/scss/abstracts/_mixins.scss']],
+    'nuxt-netlify-cms',
     'nuxtent',
+    ['@nuxtjs/google-analytics', { id: 'UA-113718696-1' }],
+
   ],
   /*
   ** Build configuration
