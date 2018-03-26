@@ -30,7 +30,7 @@ export default {
     return {
       title: 'Simone Hofer - Naturkosmetik - Chur',
       meta: [
-        { content: '0leEmXWmiJjZCKPtLPlbICysp6PjuPX25XmtipljEds', name: 'google-site-verification' }
+        { name: 'google-site-verification', content: '0leEmXWmiJjZCKPtLPlbICysp6PjuPX25XmtipljEds' }
       ]
     }
   },

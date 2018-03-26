@@ -44,7 +44,9 @@ module.exports = {
   plugins: [
     '~plugins/vue-scrollto.js',
     '~plugins/markdown-helpers.js',
-    { src: '~/plugins/vue-markdown.js', ssr: false }
+    { src: '~/plugins/vue-markdown.js', ssr: false },
+    { src: '~plugins/ga.js', ssr: false }
+
 
   ],
 
@@ -54,9 +56,7 @@ module.exports = {
   modules: [
     ['nuxt-sass-resources-loader', ['./assets/scss/abstracts/_settings.scss', './assets/scss/abstracts/_mixins.scss']],
     'nuxt-netlify-cms',
-    'nuxtent',
-    ['@nuxtjs/google-analytics', { id: 'UA-113718696-1' }],
-
+    'nuxtent'
   ],
   /*
   ** Build configuration
