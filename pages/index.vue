@@ -26,6 +26,14 @@ import ButtonScrollTop from '~/components/ButtonScrollTop.vue'
 import PageFooter from '~/components/Footer.vue'
 
 export default {
+  head () {
+    return {
+      title: this.title,
+      meta: [
+        { hid: 'gsv', name: 'google-site-verification', content: '0leEmXWmiJjZCKPtLPlbICysp6PjuPX25XmtipljEds' }
+      ]
+    }
+  },
   components: {
     Logo,
     Navigation,
