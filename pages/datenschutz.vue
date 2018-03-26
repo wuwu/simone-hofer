@@ -13,6 +13,11 @@
 import Logo from '~/components/Logo.vue'
 
 export default {
+  head () {
+    return {
+      title: 'Simone Hofer - Naturkosmetik - Chur - Datenschutz'
+    }
+  },
   components: {
     Logo
   },

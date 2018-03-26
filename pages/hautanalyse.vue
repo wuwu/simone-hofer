@@ -10,6 +10,11 @@ import Logo from '~/components/Logo.vue'
 import Skin from '~/components/SectionSkin.vue'
 
 export default {
+  head () {
+    return {
+      title: 'Simone Hofer - Hautanalyse - Chur'
+    }
+  },
   components: {
     Logo,
     Skin

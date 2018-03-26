@@ -12,6 +12,11 @@
 
 <script>
 export default {
+  head () {
+    return {
+      title: 'Simone Hofer - Naturkosmetik - Chur - Kontakt'
+    }
+  },
   layout: 'default',
 
   asyncData: async ({ app }) => ({

@@ -28,9 +28,9 @@ import PageFooter from '~/components/Footer.vue'
 export default {
   head () {
     return {
-      title: this.title,
+      title: 'Simone Hofer - Naturkosmetik - Chur',
       meta: [
-        { hid: 'gsv', name: 'google-site-verification', content: '0leEmXWmiJjZCKPtLPlbICysp6PjuPX25XmtipljEds' }
+        { content: '0leEmXWmiJjZCKPtLPlbICysp6PjuPX25XmtipljEds', name: 'google-site-verification' }
       ]
     }
   },
