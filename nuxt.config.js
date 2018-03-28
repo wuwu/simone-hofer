@@ -47,9 +47,7 @@ module.exports = {
   plugins: [
     '~plugins/vue-scrollto.js',
     '~plugins/markdown-helpers.js',
-    { src: '~/plugins/vue-markdown.js', ssr: false },
-    { src: '~plugins/ga.js', ssr: false }
-
+    { src: '~/plugins/vue-markdown.js', ssr: false }
 
   ],
 
