@@ -57,6 +57,7 @@ module.exports = {
   modules: [
     ['nuxt-sass-resources-loader', ['./assets/scss/abstracts/_settings.scss', './assets/scss/abstracts/_mixins.scss']],
     'nuxt-netlify-cms',
+    ['@nuxtjs/google-analytics', { id: 'UA-113718696-1' }],
     'nuxtent'
   ],
   /*
