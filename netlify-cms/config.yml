@@ -15,7 +15,7 @@ collections: # A list of collections the CMS should be able to edit
     delete: false
     files:
 
-      - label: Datenschutz / Impressum
+      - label: Datenschutz
         name: datenschutz
         delete: false
         file: content/pages/datenschutz.yml
