@@ -5,7 +5,7 @@
         </div>
         <div class="disclaimer">
             <nuxt-link to="/datenschutz">Datenschutz</nuxt-link><br/>
-                <nuxt-link to="/datenschutz">Impressum</nuxt-link>
+            <nuxt-link to="/impressum">Impressum</nuxt-link>
         </div>
     </section>
 </template>
